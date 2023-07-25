@@ -9,6 +9,9 @@
     "build": "tsc --project ./tsconfig.json",
     "dev": "yarn build && cd test-app/ && yarn install && next dev"
   },
+  "stackblitz": {
+    "startCommand": "yarn dev"
+  },
   "peerDependencies": {
     "encoding": "^0.1.13",
     "next": "^13.4.9",
