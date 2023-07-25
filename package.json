@@ -1,0 +1,43 @@
+{
+  "name": "image-repro",
+  "sideEffects": [
+    "./dist/index.js"
+  ],
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "dev": "yarn build && cd test-app/ && yarn install && next dev"
+  },
+  "peerDependencies": {
+    "encoding": "^0.1.13",
+    "next": "^13.4.9",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "bin": {},
+  "files": [
+    "index.js",
+    "dist",
+    "types",
+    "node_modules",
+    "tsconfig.json"
+  ],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "encoding": "^0.1.13",
+    "eslint": "^8.23.1",
+    "next": "^13.4.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  },
+  "description": "image repro",
+  "author": "",
+  "license": "ISC"
+}

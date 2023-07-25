@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "es2017", "es2020"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "preserveSymlinks": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2020",
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "typeRoots": ["types/types", "../node_modules/@types"],
+    "rootDir": "./src",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "./dist/**/*", "./test/"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types/*.d.ts"]
+}

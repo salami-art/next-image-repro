@@ -1,0 +1,29 @@
+# Root 
+node_modules
+.pnp
+.pnp.js
+# misc
+.DS_Store
+*.pem
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+schema.graphql
+
+report.*
+
+# testing
+coverage
+
+# yalc
+.vscode
+.idea
+.log*
+/dist/
+/.project
+/test-results/
+/**/*.tsbuildinfo
+/test-results/
+
+/test-app/.next
