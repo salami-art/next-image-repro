@@ -1,4 +1,3 @@
-import { draftMode } from 'next/dist/client/components/headers';
 import { Media } from '../../dist';
 export const dynamic = 'force-static';
 export const revalidate = 60;
@@ -14,10 +13,9 @@ const mainPic = {
   }
 }
 export default async function Home() {
-  const { isEnabled } = draftMode()
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Media media={mainPic} preview={isEnabled}></Media>
+      <Media media={mainPic} preview={false}></Media>
     </main>
   );
 }
